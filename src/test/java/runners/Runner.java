@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "steps",
         tags = "@Wiki",
-        dryRun = false,
+        dryRun = true,
         monochrome = false,
         plugin = {"pretty",
                 "html:target/cucumber-reports/Cucumber.html",
