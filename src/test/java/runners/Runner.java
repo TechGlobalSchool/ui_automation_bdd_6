@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "steps",
         tags = "@Etsy",
-        dryRun = true,
+        dryRun = false,
         monochrome = false,
         plugin = {"pretty",
                 "html:target/cucumber-reports/Cucumber.html",
