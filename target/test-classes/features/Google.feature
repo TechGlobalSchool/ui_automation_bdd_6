@@ -11,6 +11,6 @@ Feature: Google search functionality
     Examples:
       | input     |
       | Tesla     |
-#      | Apple     |
-#      | Microsoft |
-#      | Amazon    |
+      | Apple     |
+      | Microsoft |
+      | Amazon    |
