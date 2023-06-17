@@ -14,10 +14,10 @@ Feature: TechGlobal Training Functionalities
     Then user should see a "<message>" message
 
     Examples:
-      | username   | password | message                   |
-      | johndoe    | 123456   | Invalid Username entered! |
-      | tomsmith   | 12345    | Invalid Username entered! |
-      | TechGlobal | Test1234 | You are logged in         |
+      | username   | password | message                    |
+      | johndoe    | 123456   | Invalid Username entered!! |
+      | tomsmith   | 12345    | Invalid Username entered!  |
+      | TechGlobal | Test1234 | You are logged in          |
 
 
   @Popup

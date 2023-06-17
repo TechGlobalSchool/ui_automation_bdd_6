@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: runners.Runner
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.388 s - in runners.Runner
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 37.546 s <<< FAILURE! - in runners.Runner
+Validate Login Form #1(TechGlobal Training Functionalities)  Time elapsed: 13.305 s  <<< ERROR!
+org.openqa.selenium.NotFoundException: 
+The error message is not defined properly in the feature file
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Buraks-MBP.attlocal.net', ip: '2600:1700:3051:4f00:0:0:0:3a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2', java.version: '1.8.0_361'
+Driver info: driver.version: unknown
+
