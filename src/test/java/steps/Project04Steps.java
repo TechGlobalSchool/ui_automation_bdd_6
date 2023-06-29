@@ -26,11 +26,6 @@ public class Project04Steps {
         project04Page = new Project04Page();
     }
 
-
-    @Then("the user should see the {string} heading")
-    public void the_user_should_see_the_heading(String headingText) {
-        Assert.assertEquals(headingText, project04Page.mainHeading.getText());
-    }
     @Then("the user should see the table with the headers below")
     public void the_user_should_see_the_table_with_the_headers_below(DataTable dataTable) {
         List<String> headerText = dataTable.asList();
@@ -51,40 +46,10 @@ public class Project04Steps {
         }
 
     }
-    @Then("the user should see the {string} button is enabled")
-    public void the_user_should_see_the_button_is_enabled(String button) {
-        switch (button){
-            case "ADD PRODUCT":
-                Assert.assertTrue(project04Page.addProductButton.isEnabled());
-                break;
-            case "X":
-                Assert.assertTrue(project04Page.closeButton.isEnabled());
-                break;
-            case "SUBMIT":
-                Assert.assertTrue(project04Page.submitButton.isEnabled());
-                break;
-            default:
-        }
-    }
+
     @Then("the user should see the {string} text displayed")
     public void the_user_should_see_the_text_displayed(String total) {
         Assert.assertEquals(total, project04Page.totalAmount.getText());
-    }
-
-    @When("the user clicks on the {string} button")
-    public void theUserClicksOnTheButton(String button) {
-        switch (button){
-            case "ADD PRODUCT":
-                project04Page.addProductButton.click();
-                break;
-            case "X":
-                project04Page.closeButton.click();
-                break;
-            case "SUBMIT":
-                project04Page.submitButton.click();
-                break;
-            default:
-        }
     }
 
     @Then("the user should see the {string} modal with its heading")
